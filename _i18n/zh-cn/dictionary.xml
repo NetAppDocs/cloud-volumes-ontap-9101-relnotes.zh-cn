@@ -454,20 +454,15 @@
   <block id="656b5219a3072e1d0ff3209fb7749f9b" category="cell">336 TiB</block>
   <block id="c7867e37fc822edce03899d5be8cd610" category="cell">19 ^2^</block>
   <block id="4668344801574e5e337879aa8f85df78" category="cell">304 TiB</block>
-  <block id="fc826e6778c6295676325980e26183d6" category="cell">c4 ， m4 和 r4 实例</block>
-  <block id="e369853df766fa44e1ed0ff613f563bd" category="cell">34</block>
   <block id="64d21a165becbe18d275a66aac4f8e8e" category="list-text">21 个数据磁盘是部署 Cloud Volumes ONTAP 的 _new_ 限制。如果升级使用 9.7 或更早版本创建的系统，则系统仍支持 22 个磁盘。由于从 9.8 版开始添加了一个核心磁盘，因此在使用这些实例类型的新系统上支持的数据磁盘减少一个。</block>
   <block id="3d60f9d4f3945975bb1eca051c0bbef9" category="list-text">与其他实例类型相比，此实例类型具有更多的本地 NVMe 磁盘，这意味着支持的数据磁盘数量较少。</block>
-  <block id="6ebe799c380816a48bf991ae59543433" category="cell">544 TiB</block>
   <block id="3c59dc048e8850243be8079a5c74d079" category="cell">21</block>
   <block id="a23ca456fec74dd76d95b20f2cf60dd0" category="cell">19 ^1^</block>
   <block id="156b98ab4634edb024f99442726e3e8d" category="cell">18 ^1^</block>
   <block id="b7608c5d160ea75c5c58e10097dc4db7" category="cell">288 TiB</block>
   <block id="dee0912fefbe003d7ae380d371a87fad" category="cell">16 ^2^</block>
   <block id="9f71cb3204a7c80e435b6337aed1e728" category="cell">256 TiB</block>
-  <block id="c16a5320fa475530d9583c34fd356ef5" category="cell">31</block>
   <block id="01d00547146974c6eeb34ecc38263cb0" category="list-text">18 个数据磁盘是部署 Cloud Volumes ONTAP 的 _new_ 限制。如果升级使用 9.7 或更早版本创建的系统，则系统仍支持 19 个磁盘。由于从 9.8 版开始添加了一个核心磁盘，因此在使用这些实例类型的新系统上支持的数据磁盘减少一个。</block>
-  <block id="35a779533962b549212e6b883b5793f7" category="cell">496 TiB</block>
   <block id="6f4922f45568161a8cdf4ad2299f6d23" category="cell">18</block>
   <block id="d165ee52657df0e131ad67ed84783dfb" category="cell">16 ^1^</block>
   <block id="b9d1a1e4bd5440efc61b41572ff402ed" category="paragraph">Cloud Volumes ONTAP 使用 AWS 卷作为磁盘，并将其分组为 _aggregodes_ 。聚合可为卷提供存储。</block>
@@ -475,9 +470,6 @@
   <block id="9825b8fbfebdae674007d54a87208654" category="cell">96 TiB 原始容量 ^2^</block>
   <block id="fa1fa971d1018dcdfc6e158b981c33cb" category="list-text">无法在 HA 对中的两个节点上创建 18 个聚合，因为这样做会超出数据磁盘限制。</block>
   <block id="94603c2f4a34dbb9c9a2fa72acf1b544" category="paragraph"><block ref="b409a35c1f5637c3fa6cd7bc9b79706b" category="inline-link-rx"></block>。</block>
-  <block id="4037b2b5756ae2a7b370c7b6e783aa25" category="cell">实例系列</block>
-  <block id="db2a5609d325e7b486ff21c338843d70" category="cell">c5 ， m5 和 R5</block>
-  <block id="39361436d2ec06b159fff2a0853d8f11" category="cell">c4 ， m4 和 r4</block>
   <block id="4a17a3c856fd1f9d634bfd17f1c2f886" category="list-text">根据您使用的 EC2 实例类型，限制可以更低。下面一节列出了每个实例的限制。</block>
   <block id="3bf6fac8bc39cb7e3c1edfe9268b14b0" category="section-title">按 EC2 实例类型指定的 Storage VM 限制</block>
   <block id="a5b344442a7f99e2e79adb073bfb1038" category="paragraph">创建其他 Storage VM 时，需要将专用 IP 地址分配给端口 e0a 。下表列出了每个接口的最大专用 IP 数，以及部署 Cloud Volumes ONTAP 后端口 e0a 上可用的 IP 地址数。可用 IP 地址的数量直接影响该配置中的最大 Storage VM 数。</block>
@@ -628,9 +620,6 @@
   <block id="803d45df8eb29c3872409cc750868adb" category="paragraph"><block ref="91157be1d04ccb789488c1869d33e63c" category="inline-link-rx"></block>。</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">升级单节点系统会使系统脱机长达 25 分钟，在此期间 I/O 会中断。</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。</block>
-  <block id="0810d353d59682cc576139c85dde16ca" category="section-title">c4 ， m4 和 r4 实例类型</block>
-  <block id="a1e5d1768da3a3100837f2ea13ebd32f" category="paragraph">从 9.8 版开始，新的 Cloud Volumes ONTAP 系统不支持 C4 ， M4 和 r4 实例类型。如果您的现有 Cloud Volumes ONTAP 系统运行的是 C4 ， M4 或 r4 实例类型，则仍可升级到此版本。</block>
-  <block id="f84be4481dc8e8613c8c66fe2b277872" category="paragraph">建议更改为 c5 ， m5 或 R5 实例系列中的实例类型。</block>
   <block id="2be187f608e3ad4af24d83ba1557f439" category="section-title">DS3_v2</block>
   <block id="65b0a9dbf9678f2f159ed56b9d03e3c6" category="paragraph">从 9.9.1 版开始，新的和现有的 Cloud Volumes ONTAP 系统不再支持 DS3_v2 VM 类型。如果您的现有系统在此 VM 类型上运行，则需要在升级到 9.10.1 之前更改 VM 类型。</block>
   <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">发行说明主页</block>
@@ -672,7 +661,6 @@
   <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用 HA 对时， Cloud Volumes ONTAP 支持对这些 VM 类型使用较高的写入速度。您可以在部署期间或之后的任何时间从Cloud Manager启用高写入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12 x大型</block>
-  <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">此版本中的新Cloud Volumes ONTAP 系统不支持c4、m4和r4实例类型。但是、我们仍会显示这些实例类型的磁盘限制、因为在这些实例类型之一上运行时、您可以将系统升级到此版本。</block>
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP 提供了不同的许可选项、可让您根据自己的需求选择消费模式。</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">基于容量的许可以 _package_ 的形式提供。部署Cloud Volumes ONTAP 系统时、您可以根据业务需求从多个许可包中进行选择。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">详细了解这些许可选项</block>
@@ -685,4 +673,10 @@
   <block id="a1a76d69474e885d4cccb97efcc9388e" category="paragraph"><block ref="748bb4ed917d0715422ce7b9282ee6b3" category="inline-link-rx"></block> （需要登录 NetApp 支持站点）。</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
   <block id="da934d10ecc6d50a861d9470630d4989" category="paragraph">如果您充分利用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在要将 Cloud Volumes ONTAP 部署到的 VPC 中，您需要实施 DNS 记录，以便将流量转发到所需的<block ref="c291f5ab92cbab017e6f29ee8a0edb54" category="inline-link-rx"></block>。</block>
+  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">不再支持c4、m4和r4实例(2022年10月28日)</block>
+  <block id="841d1ec868d8656a6dc9f74fd65112d6" category="paragraph">在AWS中、Cloud Volumes ONTAP 不再支持C4、M4和M4 EC2实例类型。如果现有系统运行的是C4、M4或r4实例类型、则必须更改为c5、M5或R5实例系列中的实例类型。</block>
+  <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">了解如何更改Cloud Volumes ONTAP 的EC2实例类型</block>
+  <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>。</block>
+  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 支持</block>
+  <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">请参见 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 了解有关这些实例类型的可用性和支持终止的更多信息。</block>
 </blocks>
