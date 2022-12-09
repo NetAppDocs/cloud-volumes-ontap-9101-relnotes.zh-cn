@@ -20,7 +20,7 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 
 
 
-== 不得从云提供商的控制台修改 Cloud Volumes ONTAP 部署
+== 不得从云提供商的控制台修改Cloud Volumes ONTAP 部署
 
 通过云提供商的控制台更改 Cloud Volumes ONTAP 系统的配置会导致配置不受支持。对 Cloud Manager 创建和管理的 Cloud Volumes ONTAP 资源进行的任何更改都会影响系统稳定性以及 Cloud Manager 管理系统的能力。
 

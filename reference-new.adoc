@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-new.html 
-keywords: 'what"s new, new, features, release notes, enhancements' 
+keywords: new features, release notes, enhancements 
 summary: Cloud Volumes ONTAP 9.10.1 提供了几项新功能和增强功能。 
 ---
 = Cloud Volumes ONTAP 9.10.1 中的新增功能
