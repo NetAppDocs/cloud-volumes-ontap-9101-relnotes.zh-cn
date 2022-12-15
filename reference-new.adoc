@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.10.1 提供了几项新功能和增强功能。
 [role="lead"]
 Cloud Volumes ONTAP 9.10.1 提供了几项新功能和增强功能。
 
-最新版本的 Cloud Manager 还引入了其他功能和增强功能。请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 发行说明"^] 了解详细信息。
+最新版本的BlueXP还引入了其他功能和增强功能。请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["《BlueXP发行说明》"^] 了解详细信息。
 
 
 
@@ -40,7 +40,7 @@ https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downl
 
 == 9.10.1 P3 (2022年5月15日)
 
-现在、如果您的Connector运行的是3.9.13或更高版本、则可以在Microsoft Azure中为Cloud Volumes ONTAP 提供9.10.1 P3修补程序。Cloud Manager 将提示您将现有系统升级到此修补程序版本。
+现在、如果您的Connector运行的是3.9.13或更高版本、则可以在Microsoft Azure中为Cloud Volumes ONTAP 提供9.10.1 P3修补程序。BlueXP将提示您将现有系统升级到此修补程序版本。
 
 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.10.1P3["查看 P3 修补程序中已修复的错误列表"^] （需要登录 NetApp 支持站点）。
 
@@ -58,7 +58,7 @@ https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downl
 如果您已在云市场订阅，则也会自动订阅这些新产品。在部署新的 Cloud Volumes ONTAP 工作环境时，您可以选择按容量收费。
 
 +
-如果您是新客户， Cloud Manager 将在您创建新的工作环境时提示您订阅。
+如果您是新客户、在创建新的工作环境时、BlueXP将提示您订阅。
 
 * 已弃用通过 AWS 和 Google Cloud MarketPlaces 进行的节点间许可，新订阅者将无法再使用此许可。其中包括年度合同和每小时订阅（ Explore ， Standard 和 Premium ）。
 +
@@ -74,13 +74,13 @@ link:concept-licensing.html["详细了解 Cloud Volumes ONTAP 的许可选项"]�
 
 Cloud Volumes ONTAP 9.10.1 的通用版本（ GA ）现已推出。GA 版本包含错误修复。
 
-Cloud Manager 将提示您升级运行以下任一版本的现有系统： 9.10.1 RC1 ， 9.10.0 或 9.9.1 。
+BlueXP将提示您升级运行以下任一版本的现有系统：9.10.1 RC1、9.10.0或9.9.1。
 
 
 
 == 支持更多 VM 类型（ 2021 年 1 月 2 日）
 
-在 Cloud Manager 3.9.14 版本中，从 9.10.1 版本开始， Microsoft Azure 中的以下 VM 类型现在支持 Cloud Volumes ONTAP ：
+作为BlueXP 3.9.14版本的一部分、从9.10.1版本开始、Microsoft Azure中的以下VM类型现在支持Cloud Volumes ONTAP ：
 
 * E4ds_v4
 * E8ds_v4
@@ -112,7 +112,7 @@ az account set -s AZURE_SUBSCRIPTION_NAME_OR_ID
 az feature register --name EnableHighAvailabilityMode --namespace Microsoft.Network
 az provider register -n Microsoft.Network
 ----
-对于需要在 Azure 订阅上启用此功能的 Cloud Volumes ONTAP 9.10.1 系统， Cloud Manager 将在 " 需要操作 " 消息中提示您提供这些详细信息。
+对于需要在Azure订阅上启用此功能的Cloud Volumes ONTAP 9.10.1系统、BlueXP将在"需要操作"消息中提示您提供这些详细信息。
 
 请注意以下事项：
 
@@ -131,9 +131,9 @@ az provider register -n Microsoft.Network
 
 === 支持 Keystone Flex 订阅
 
-在 Cloud Manager 3.9.13 版本中，您现在可以对 Cloud Volumes ONTAP HA 对使用 Keystone Flex 订阅。Keystone Flex 订阅是一种按需购买，基于订阅的服务，可为优先采用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。
+在连接器3.9.13版本中、您现在可以对Cloud Volumes ONTAP HA对使用Keystone Flex订阅。Keystone Flex 订阅是一种按需购买，基于订阅的服务，可为优先采用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。
 
-您可以从 Cloud Manager 部署的所有新版本的 Cloud Volumes ONTAP 均支持 Keystone Flex 订阅。
+您可以从BlueXP部署的所有新版本的Cloud Volumes ONTAP 均支持Keystone Flex订阅。
 
 
 
@@ -145,9 +145,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security
 
 
 
-== 所需版本的 Cloud Manager Connector
+== 所需版本的BlueXP Connector
 
-要部署新的 Cloud Volumes ONTAP 9.10.1 系统并将现有系统升级到 9.10.1 ， Cloud Manager Connector 必须运行版本 3.9.13 或更高版本。
+要部署新的Cloud Volumes ONTAP 9.10.1系统并将现有系统升级到9.10.1、BlueXP连接器必须运行版本3.9.13或更高版本。
 
 
 TIP: 默认情况下，连接器会自动升级，因此您应运行最新版本。
@@ -156,10 +156,10 @@ TIP: 默认情况下，连接器会自动升级，因此您应运行最新版本
 
 == 升级说明
 
-* Cloud Volumes ONTAP 升级必须从 Cloud Manager 完成。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。
-* 您可以从 9.10.0 版和 9.9.1 版升级到 Cloud Volumes ONTAP 9.10.1 。Cloud Manager 将提示您将符合条件的 Cloud Volumes ONTAP 系统升级到 9.10.1 版。
+* 必须从BlueXP完成Cloud Volumes ONTAP 升级。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。
+* 您可以从 9.10.0 版和 9.9.1 版升级到 Cloud Volumes ONTAP 9.10.1 。BlueXP将提示您将符合条件的Cloud Volumes ONTAP 系统升级到9.10.1版。
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解在 Cloud Manager 通知您时如何升级"^]。
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解在收到BlueXP通知时如何升级"^]。
 
 * 升级单节点系统会使系统脱机长达 25 分钟，在此期间 I/O 会中断。
 * 升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
