@@ -22,7 +22,6 @@
   <block id="d69dddad3d38a1500a52e7e599cb94df" category="paragraph">节点重新启动后，配对节点必须先同步数据，然后才能返回存储。重新同步数据所需的时间取决于节点关闭时客户端写入的数据量以及交还期间的数据写入速度。</block>
   <block id="ac1c2f0887629ee768721c3b8cf91e3a" category="inline-link">了解存储在 AWS 中运行的 Cloud Volumes ONTAP HA 对中的工作原理</block>
   <block id="5e95654e1eacf29d1e5174606546ef45" category="summary">本发行说明介绍了 Cloud Volumes ONTAP 9.10.1 的新增功能，限制和已知问题。</block>
-  <block id="9c839c500b23ff665a88087ed187b455" category="doc">《 Cloud Volumes ONTAP 9.10.1 发行说明》</block>
   <block id="b889869e31827a33530d6fd02141fdb5" category="summary">Azure 支持多种 Cloud Volumes ONTAP 配置。</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="doc">Azure 中支持的配置</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">按许可证支持的配置</block>
@@ -562,7 +561,6 @@
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。</block>
   <block id="2be187f608e3ad4af24d83ba1557f439" category="section-title">DS3_v2</block>
   <block id="65b0a9dbf9678f2f159ed56b9d03e3c6" category="paragraph">从 9.9.1 版开始，新的和现有的 Cloud Volumes ONTAP 系统不再支持 DS3_v2 VM 类型。如果您的现有系统在此 VM 类型上运行，则需要在升级到 9.10.1 之前更改 VM 类型。</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">发行说明主页</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="sidebar">许可概述</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="sidebar">支持的配置</block>
@@ -596,7 +594,6 @@
   <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4 ^1、2^</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12 x大型</block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP 提供了不同的许可选项、可让您根据自己的需求选择消费模式。</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">基于容量的许可以 _package_ 的形式提供。部署Cloud Volumes ONTAP 系统时、您可以根据业务需求从多个许可包中进行选择。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">详细了解这些许可选项</block>
   <block id="346f7f627d1a93bfbf315865554048c6" category="list-text">反勒索软件</block>
@@ -679,4 +676,11 @@ The one data-serving SVM spans the entire Cloud Volumes ONTAP system (HA pair or
   <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>。
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
   <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">下表中显示的带宽与每个实例类型的 AWS 限制一致。这些限制与 Cloud Volumes ONTAP 所能提供的功能不完全一致。有关预期性能，请参见<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>。</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择一种满足您需求的消费模式。</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">软件包</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">有关基于容量的许可证的更多信息</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用Azure VM扩展的限制</block>
+  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP不支持在部署中使用Azure虚拟机(VM)扩展和VM应用程序。在Azure中将Cloud Volumes ONTAP与VM扩展结合使用会导致操作延迟、NetApp建议避免这些延迟。</block>
+  <block id="21ef86e7add01acad03c60ba195fddf0" category="sidebar">Cloud Volumes ONTAP 9.10.1发行说明</block>
 </blocks>
