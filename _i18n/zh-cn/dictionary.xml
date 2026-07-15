@@ -671,7 +671,6 @@ The one data-serving SVM spans the entire Cloud Volumes ONTAP system (HA pair or
   <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">了解如何在具有C4、M4和R4 EC2实例类型的AWS中升级</block>
   <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>。
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
-  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">下表中显示的带宽与每个实例类型的 AWS 限制一致。这些限制与 Cloud Volumes ONTAP 所能提供的功能不完全一致。有关预期性能，请参见<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>。</block>
   <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择一种满足您需求的消费模式。</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">软件包</block>
   <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">有关基于容量的许可证的更多信息</block>
@@ -683,4 +682,5 @@ The one data-serving SVM spans the entire Cloud Volumes ONTAP system (HA pair or
   <block id="f0de068c81c765820aca0fa8fe017396" category="list-text">有关Azure区域支持，请参见<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>。</block>
   <block id="ef9be83cb59b0572a3581a6724316e48" category="list-text">有关Google Cloud Platform区域支持，请参见<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>。</block>
   <block id="5a94f18247116693735ff13d8eeaa964" category="paragraph"><block ref="5a94f18247116693735ff13d8eeaa964" category="inline-link-rx"></block></block>
+  <block id="fb83bdf454bf964031306f46d967b051" category="paragraph">下表中显示的带宽与每个实例类型的记录 AWS 限制相匹配。这些限制与 Cloud Volumes ONTAP 可以提供的不完全一致。有关预期性能，请参阅<block ref="f9e25e1e3616de01564541c204317f8f" category="inline-link-rx"></block>。</block>
 </blocks>
